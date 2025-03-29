@@ -20,9 +20,19 @@ This task investigates three key behaviors of Django signals:
 - Added thread and transaction analysis in signal handlers
 
 ### Key Findings
-1. **Signals execute synchronously** (blocking)
-2. **Signals run in the same thread** as the caller
-3. **Signals respect database transactions**
+### Key Findings
+
+1. **Signals execute synchronously** (blocking)  
+   ![Synchronous Execution](images/sync_execution.png)  
+   *Diagram showing sequential execution of signal handlers*
+
+2. **Signals run in the same thread** as the caller  
+   ![Same Thread Execution](images/same_thread.png)  
+   *Visualization comparing thread IDs between caller and signal handler*
+
+3. **Signals respect database transactions**  
+   ![Transaction Flow](images/transaction_flow.png)  
+   *Diagram showing signals within a transaction atomic block*
 
 ### How to Test
 1. Clone the repository
