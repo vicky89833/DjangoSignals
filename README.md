@@ -40,3 +40,19 @@ This task investigates three key behaviors of Django signals:
    ```bash
    python manage.py makemigrations
    python manage.py migrate
+
+
+## Task 2: Custom Rectangle Class
+
+### Overview
+Implemented an iterable Rectangle class that:
+1. Requires integer length and width at initialization
+2. Can be iterated over to yield dimensions in dictionary format
+
+###Implementation
+![Ractangle Class ](images/ract.png)
+
+###Feature
+- Type hints enforce integer parameters
+-Proper iterator protocol implementation
+-Clean string representation
